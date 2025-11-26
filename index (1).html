@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodíaco: O Mistério Não Resolvido da Califórnia</title>
+    <!-- Carrega o Tailwind CSS para estilização moderna e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a2e; /* Azul Escuro Sombrio */
+            color: #e0e0e0;
+        }
+        .header-bg {
+            background-color: #0f0f1d; /* Fundo do Header mais escuro */
+        }
+        .content-card {
+            background-color: #2c2c45; /* Cor de fundo principal do conteúdo */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        }
+        .section-title {
+            border-left: 5px solid #ff7f50; /* Destaque laranja/cobre */
+        }
+        .cipher-text {
+            font-family: 'Noto Serif', serif;
+            letter-spacing: 0.15em;
+        }
+        .zodiac-symbol {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #ff7f50;
+            border-radius: 50%;
+            position: relative;
+        }
+        .zodiac-symbol::before, .zodiac-symbol::after {
+            content: '';
+            position: absolute;
+            background-color: #ff7f50;
+        }
+        .zodiac-symbol::before {
+            width: 100%;
+            height: 4px;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+        .zodiac-symbol::after {
+            width: 4px;
+            height: 100%;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .newspaper-clipping {
+            background-color: #f7f3e8; /* Cor de papel antigo */
+            color: #333;
+            border: 2px solid #5a5a5a;
+            transform: rotate(-1deg);
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 sm:p-8">
+
+    <!-- Cabeçalho Principal -->
+    <header class="header-bg p-6 mb-8 rounded-lg shadow-xl text-center">
+        <div class="flex items-center justify-center space-x-4">
+            <div class="zodiac-symbol"></div>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-[#ff7f50] tracking-wider">
+                O ARQUIVO ZODÍACO
+            </h1>
+            <div class="zodiac-symbol"></div>
+        </div>
+        <p class="mt-2 text-xl text-gray-400">Um Mistério Não Resolvido da Califórnia</p>
+    </header>
+
+    <!-- Layout Principal (Responsivo) -->
+    <main class="max-w-6xl mx-auto space-y-12">
+
+        <!-- Seção 1: Artigo Principal e Contexto -->
+        <section class="content-card p-6 md:p-10 rounded-xl">
+            <h2 class="section-title text-3xl font-bold pl-4 mb-6 text-white">
+                O Serial Killer dos Códigos
+            </h2>
+            <p class="text-gray-300 leading-relaxed">
+                O Assassino do Zodíaco é o pseudônimo de um serial killer ativo no Norte da Califórnia no final dos anos 1960. Embora o Zodíaco tenha reivindicado 37 vítimas em suas cartas, a polícia confirmou apenas cinco mortes e duas tentativas de homicídio. O que torna o caso único é a série de cartas e criptogramas enviados à imprensa, especialmente ao jornal *San Francisco Chronicle*, nos quais o assassino se gabava de seus crimes e desafiava as autoridades.
+            </p>
+
+            <div class="mt-8">
+                <h3 class="text-2xl font-semibold mb-4 text-[#ff7f50]">As Cifras e a Mensagem de Medo</h3>
+                <p class="text-gray-400 mb-4">
+                    Das quatro cifras enviadas, apenas duas foram resolvidas. O primeiro criptograma (Z408), decifrado por um casal de professores, revelou a aterrorizante confissão do assassino:
+                </p>
+                <div class="bg-gray-700 p-4 rounded-lg border-2 border-gray-600">
+                    <p class="cipher-text text-lg text-yellow-300 italic">
+                        "EU GOSTO DE MATAR PESSOAS PORQUE É TÃO DIVERTIDO É MAIS DIVERTIDO DO QUE CAÇAR ANIMAIS SELVAGENS NA FLORESTA..."
+                    </p>
+                </div>
+                <p class="text-sm mt-3 text-gray-500">
+                    — Trecho decifrado do Criptograma 408 (Z408), 1969. O assassino também afirmou que estava colecionando suas vítimas para que fossem seus "escravos no paraíso".
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção 2: Manchetes de Jornais e Cobertura -->
+        <section class="content-card p-6 md:p-10 rounded-xl">
+            <h2 class="section-title text-3xl font-bold pl-4 mb-6 text-white">
+                Manchetes e Pânico na Baía
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Clipping 1: O Primeiro Ataque Confirmado -->
+                <div class="newspaper-clipping p-4 rounded-lg shadow-lg">
+                    <p class="text-xs font-bold text-red-700 mb-1">ED. ESPECIAL - DEZEMBRO 1968</p>
+                    <h3 class="text-2xl font-extrabold font-serif leading-tight">
+                        CASAL DE ADOLESCENTES ASSASSINADO A TIROS NA ESTRADA LAKE HERMAN
+                    </h3>
+                    <p class="text-sm mt-2 font-serif">
+                        David Faraday (17) e Betty Lou Jensen (16) são as primeiras vítimas confirmadas do que a polícia teme ser um serial killer. O ataque ocorreu em um "lover's lane" isolado em Benicia.
+                    </p>
+                </div>
+
+                <!-- Clipping 2: A Comunicação do Zodíaco -->
+                <div class="newspaper-clipping p-4 rounded-lg shadow-lg transform rotate-1">
+                    <p class="text-xs font-bold text-red-700 mb-1">NOTÍCIAS URGENTES - JULHO 1969</p>
+                    <h3 class="text-2xl font-extrabold font-serif leading-tight">
+                        ASSASSINO ENQUADRA CRIPTO! ZODÍACO ENVIA CÓDIGO AOS JORNAIS
+                    </h3>
+                    <p class="text-sm mt-2 font-serif">
+                        Três jornais recebem cartas idênticas. O autor, que se autodenomina "Zodíaco", descreve os crimes de Vallejo e ameaça mais ataques se suas cifras não forem publicadas.
+                    </p>
+                </div>
+
+                <!-- Clipping 3: O Crime de São Francisco -->
+                <div class="newspaper-clipping p-4 rounded-lg shadow-lg transform rotate-[-0.5deg]">
+                    <p class="text-xs font-bold text-red-700 mb-1">ALERTA SÃO FRANCISCO - OUTUBRO 1969</p>
+                    <h3 class="text-2xl font-extrabold font-serif leading-tight">
+                        MOTORISTA DE TÁXI MORTALMENTE BALEADO EM PRESÍDIO HEIGHTS
+                    </h3>
+                    <p class="text-sm mt-2 font-serif">
+                        Paul Stine (29), motorista de táxi, é a última vítima confirmada. Em carta ao Chronicle, o Zodíaco inclui um pedaço de tecido da camisa ensanguentada da vítima como prova.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção 3: Histórias Reais e Testemunhos de Sobreviventes -->
+        <section class="content-card p-6 md:p-10 rounded-xl">
+            <h2 class="section-title text-3xl font-bold pl-4 mb-6 text-white">
+                Vítimas e o Rosto por Trás do Capuz
+            </h2>
+            
+            <p class="text-gray-300 mb-6">
+                Dois ataques contaram com a presença de sobreviventes, cujos depoimentos foram cruciais para a polícia, resultando no famoso retrato falado e nas descrições do *modus operandi* do assassino.
+            </p>
+
+            <div class="space-y-8">
+                
+                <!-- Testemunho de Michael Mageau -->
+                <div class="p-6 bg-[#212135] rounded-lg border border-gray-600">
+                    <h3 class="text-xl font-semibold text-yellow-400 mb-2">Michael Mageau (Sobrevivente de Vallejo, Julho de 1969)</h3>
+                    <p class="text-gray-400 italic">
+                        "Estávamos no carro quando um outro veículo parou atrás de nós e o motorista desceu. Ele aproximou-se com uma lanterna e depois começou a disparar. Eu vi o rosto dele por um breve momento. Ele tinha cerca de 26 a 30 anos, era atarracado, de cabelo curto..."
+                    </p>
+                    <p class="mt-3 text-sm text-gray-500">
+                        O Zodíaco ligou para a polícia após este ataque, confessando e fornecendo detalhes que só o assassino saberia.
+                    </p>
+                </div>
+
+                <!-- Testemunho de Bryan Hartnell -->
+                <div class="p-6 bg-[#212135] rounded-lg border border-gray-600">
+                    <h3 class="text-xl font-semibold text-yellow-400 mb-2">Bryan Hartnell (Sobrevivente do Lago Berryessa, Setembro de 1969)</h3>
+                    <p class="text-gray-400 italic">
+                        "Ele aproximou-se usando um capuz de carrasco preto com o símbolo de mira no peito [o mesmo símbolo usado nas cartas]. Ele tinha uma arma e amarrou-nos. Foi o momento mais aterrorizante. Ele esfaqueou-nos antes de ir embora."
+                    </p>
+                    <p class="mt-3 text-sm text-gray-500">
+                        Este foi o ataque em que o Zodíaco usou uma faca, diferentemente dos outros que usaram armas. Hartnell sobreviveu milagrosamente a múltiplas facadas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 4: O Mistério Persiste -->
+        <section class="content-card p-6 md:p-10 rounded-xl">
+            <h2 class="section-title text-3xl font-bold pl-4 mb-6 text-white">
+                O Mistério Não Resolvido
+            </h2>
+            <p class="text-gray-300 leading-relaxed">
+                A identidade do Assassino do Zodíaco permanece desconhecida. Embora **Arthur Leigh Allen** tenha sido o suspeito mais investigado, testes de DNA feitos após sua morte em 1992 não foram conclusivos. O caso foi reaberto em 2007.
+            </p>
+            <p class="text-gray-300 leading-relaxed mt-4">
+                Em 2021, a solução do Criptograma 340 (Z340) por um grupo internacional de decifradores revelou uma nova mensagem, que terminava com: "NÃO TENHO MEDO DA CÂMARA DE GÁS PORQUE ELA VAI ME ENVIAR PARA O PARAÍSO MAIS CEDO OU MAIS TARDE POIS AGORA TENHO ESCRAVOS SUFICIENTES PARA TRABALHAR PARA MIM". No entanto, mesmo com novas tecnologias, o caso continua a assombrar a Baía de São Francisco.
+            </p>
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="text-center py-6 text-gray-500 text-sm">
+            <p>&copy; 2025 Arquivo Digital do Zodíaco. Todo o material é baseado em registos públicos e artigos de imprensa.</p>
+        </footer>
+
+    </main>
+</body>
+</html>
